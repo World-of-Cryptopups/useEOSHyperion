@@ -1,3 +1,3 @@
-import HelloComponent from './component/simple'
+import UseHyperionProvider from './component/provider'
 
-export { HelloComponent }
+export { UseHyperionProvider }

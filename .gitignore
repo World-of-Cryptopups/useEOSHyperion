@@ -6,6 +6,9 @@ dist
 *.log
 *.env
 
+.eslintcache
+
+
 # ignore lock files from example folder to avoid unnecessary deps error
 example/**/package-lock.json
 example/**/yarn.lock

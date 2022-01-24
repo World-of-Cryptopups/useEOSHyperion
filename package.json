@@ -1,7 +1,7 @@
 {
   "name": "@crptopuppie/useeoshyperion",
   "version": "0.0.1",
-  "description": "",
+  "description": "React hooks for Hyperion State API data fetching.",
   "main": "./dist/index.js",
   "module": "./dist/index.modern.js",
   "unpkg": "./dist/index.umd.js",
@@ -20,13 +20,28 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepare": "husky install",
-    "precommit": "lint-staged",
     "prepack": "npm run build",
     "prepublishOnly": "npm run build",
     "build": "cross-env NODE_ENV=production && rm -rf dist && rollup -c"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "hyperion fetcher",
+    "hyperion hook fetcher",
+    "swr fetcher",
+    "swr hyperion"
+  ],
+  "author": {
+    "name": "World of Cryptopups Members",
+    "email": "iamcoderx@gmail.com",
+    "url": "https://www.worldofcryptopups.cf/"
+  },
+  "contributors": [
+    {
+      "name": "Joshue Abance",
+      "email": "iamcoderx@gmail.com",
+      "url": "https://github.com/TheBoringDude"
+    }
+  ],
   "license": "ISC",
   "dependencies": {
     "cross-fetch": "^3.1.5",

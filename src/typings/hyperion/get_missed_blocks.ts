@@ -1,4 +1,4 @@
-import { BaseQueryResponse } from '../base'
+import { BaseQueryResponse } from './base'
 
 export interface GetMissedBlocks extends BaseQueryResponse {
   stats: Stats

@@ -19,7 +19,11 @@ interface useHyperionFetcherProps<I, K> {
  * @param props Request props.
  * @returns FetchResult<T>
  */
-const useHyperionFetcher = <T, I, K>(
+const useHyperionFetcher = <
+  T,
+  I extends Record<string, any> = Record<string, any>,
+  K extends Record<string, any> = Record<string, any>
+>(
   props?: useHyperionFetcherProps<I, K>
 ): FetchResult<T> => {
   let { uri, params, body, method, endpoint } = props ?? { uri: '' }

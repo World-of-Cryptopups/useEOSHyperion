@@ -1,13 +1,12 @@
-import peerDepsExternal from 'rollup-plugin-peer-deps-external'
-import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
-import typescript from 'rollup-plugin-typescript2'
+import json from '@rollup/plugin-json'
+import resolve from '@rollup/plugin-node-resolve'
 import url from '@rollup/plugin-url'
 import analyze from 'rollup-plugin-analyzer'
-import json from 'rollup-plugin-json'
+import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import sourceMaps from 'rollup-plugin-sourcemaps'
-
-const packageJson = require('./package.json')
+import typescript from 'rollup-plugin-typescript2'
+import packageJson from './package.json'
 
 export default {
   input: 'src/index.ts',
@@ -45,7 +44,10 @@ export default {
     typescript({
       useTsconfigDeclarationDir: true,
       rollupCommonJSResolveHack: false,
-      clean: true
+      clean: true,
+      tsconfigOverride: {
+        exclude: ['src/__tests__']
+      }
     }),
     analyze(),
     sourceMaps()

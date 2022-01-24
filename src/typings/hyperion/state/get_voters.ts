@@ -1,6 +1,6 @@
-export interface GetVoters {
-  query_time: number
-  voter_count: number
+import { BaseQueryResponse } from '../base'
+
+export interface GetVoters extends BaseQueryResponse {
   voters: Voter[]
 }
 

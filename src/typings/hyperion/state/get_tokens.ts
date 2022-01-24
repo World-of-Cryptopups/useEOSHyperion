@@ -1,5 +1,6 @@
-export interface GetTokens {
-  query_time: number
+import { BaseQueryResponse } from '../base'
+
+export interface GetTokens extends BaseQueryResponse {
   account: string
   tokens: Token[]
 }

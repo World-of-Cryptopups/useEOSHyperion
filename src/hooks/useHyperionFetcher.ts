@@ -1,7 +1,7 @@
 import useSWR from 'swr'
 import urljoin from 'url-join'
 import { useHyperionContext } from '../component/provider'
-import ChainError from '../lib/error'
+import FetchError from '../lib/error'
 import { getFetcher, postFetcher } from '../lib/fetcher'
 import { FetchResult } from '../typings/fetch'
 
@@ -40,7 +40,7 @@ const useHyperionFetcher = <
     throw new Error('No Hyperion API Endpoint set.')
   }
 
-  const { data, error } = useSWR<T, ChainError>(
+  const { data, error } = useSWR<T, FetchError>(
     props != null
       ? // this is parsed accordingly to the api endpoints request params and bodies
         [urljoin(endpoint, uri), method === 'get' ? params : body]

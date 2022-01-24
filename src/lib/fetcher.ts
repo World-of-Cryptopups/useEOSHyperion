@@ -1,6 +1,6 @@
 import fetch from 'cross-fetch'
 import urljoin from 'url-join'
-import ChainError from './error'
+import FetchError from './error'
 import parseParams from './params'
 
 const getFetcher = async (url: string, params?: Record<string, any>) => {
@@ -13,7 +13,7 @@ const getFetcher = async (url: string, params?: Record<string, any>) => {
   const data = await res.json()
 
   if (!res.ok) {
-    throw new ChainError(data)
+    throw new FetchError(data.message, data.statusCode)
   }
 
   return data
@@ -27,7 +27,7 @@ const postFetcher = async (url: string, body?: Record<string, any>) => {
   const data = await res.json()
 
   if (!res.ok) {
-    throw new ChainError(data)
+    throw new FetchError(data.message, data.statusCode)
   }
 
   return data

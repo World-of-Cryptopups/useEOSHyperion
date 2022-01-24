@@ -1,17 +1,10 @@
-import { InternalServerErrorProps } from '../typings/error'
+class FetchError extends Error {
+  public readonly status: number
 
-/**
- * Custom error class for adding a .data object with it.
- */
-class ChainError<
-  T extends Record<string, any> = InternalServerErrorProps
-> extends Error {
-  public readonly data: T
-
-  constructor(data: T) {
-    super()
-    this.data = data
+  constructor(message: string, status: number) {
+    super(message)
+    this.status = status
   }
 }
 
-export default ChainError
+export default FetchError

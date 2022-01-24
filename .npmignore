@@ -1,15 +1,21 @@
 .babelrc
 .eslintrc
+.eslintcache
 .prettierrc
 .eslintignore
 .huskyrc.json
 .lintstagedrc.json
 *.config.ts
 tsconfig.json
+.nvmrc
 
 *.tgz
+jest.config.js
 
 .vscode
+.github
+.husky
+
 node_modules
 example
 src

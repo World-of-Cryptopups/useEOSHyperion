@@ -38,12 +38,7 @@ export interface GetAccountAccount {
   subjective_cpu_bill_limit: Limit
 }
 
-export enum AccountName {
-  Atomicassets = 'atomicassets',
-  Fckedupmyacc = 'fckedupmyacc',
-  OrngWax = 'orng.wax',
-  Shomaiiblend = 'shomaiiblend'
-}
+export type AccountName = string
 
 export interface Limit {
   used: number
@@ -74,10 +69,7 @@ export interface Ion {
   permission: PermissionEnum
 }
 
-export enum PermissionEnum {
-  Active = 'active',
-  EosioCode = 'eosio.code'
-}
+export type PermissionEnum = string
 
 export interface Key {
   key: string

@@ -24,7 +24,7 @@ const useHyperionFetcher = <
   I extends Record<string, any> = Record<string, any>,
   K extends Record<string, any> = Record<string, any>
 >(
-  props?: useHyperionFetcherProps<I, K>
+  props?: useHyperionFetcherProps<I, K> | null
 ): FetchResult<T> => {
   let { uri, params, body, method, endpoint } = props ?? { uri: '' }
 

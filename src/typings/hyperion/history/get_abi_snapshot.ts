@@ -3,6 +3,7 @@ import { BaseQueryResponse } from '../base'
 export interface GetAbiSnapshot extends BaseQueryResponse {
   block_num: number
   present?: boolean
+  abi: ABI
 }
 
 export interface ABI {

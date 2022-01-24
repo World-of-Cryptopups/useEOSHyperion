@@ -1,9 +1,8 @@
 import { GetActions } from '../../typings/hyperion'
+import { LimitSkipProps } from '../../typings/props'
 import useHyperionFetcher from '../useHyperionFetcher'
 
-interface useGetActionsProps {
-  limit?: number
-  skip?: number
+interface useGetActionsProps extends LimitSkipProps {
   account?: string
   track?: string
   filter?: string

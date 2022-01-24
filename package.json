@@ -1,6 +1,6 @@
 {
-  "name": "react-library-template",
-  "version": "1.0.0",
+  "name": "@crptopuppie/useeoshyperion",
+  "version": "0.0.1",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.modern.js",
@@ -13,7 +13,7 @@
       "types": "./dist/typings/index.d.ts"
     }
   },
-  "repository": "TheBoringDude/react-library-template",
+  "repository": "World-of-Cryptopups/useEOSHyperion",
   "scripts": {
     "test": "jest",
     "test:ci": "jest --ci --coverage --silent",

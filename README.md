@@ -8,7 +8,7 @@ All of the hooks wraps around `useSWR` from the [swr](https://swr.vercel.app) li
 ## Install
 
 ```sh
-npm install @crptopuppie/useeoshyperion --save
+npm install @cryptopuppie/useeoshyperion --save
 ```
 
 ## Usage

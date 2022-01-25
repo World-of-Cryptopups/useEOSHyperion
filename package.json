@@ -1,6 +1,6 @@
 {
-  "name": "@crptopuppie/useeoshyperion",
-  "version": "0.1.0",
+  "name": "@cryptopuppie/useeoshyperion",
+  "version": "0.1.1",
   "description": "React hooks for EOS Hyperion State API data fetching.",
   "main": "./dist/index.js",
   "module": "./dist/index.modern.js",

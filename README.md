@@ -1,6 +1,7 @@
 # useEOSHypersion
 
-React hooks for [Hyperion State API](https://github.com/eosrio/hyperion-history-api) data fetching.
+React hooks for [EOS Hyperion State API](https://github.com/eosrio/hyperion-history-api) data fetching.
+This can be used with any supported EOSIO-based blockchains.
 
 All of the hooks wraps around `useSWR` from the [swr](https://swr.vercel.app) library.
 
@@ -78,8 +79,8 @@ export default function App() {
 
 - **Error handling**
 
-  All of the hooks export error objects, `error` and `isError`.
-  If `isError` is true, the `data` object is null and `error` otherwise.
+  All of the hooks export error objects, `error` and `hasFailed`.
+  If `hasFailed` is true, the `data` object is null and `error` otherwise.
 
   ```jsx
   import { useGetActions } from '@cryptopuppie/useeoshyperion'

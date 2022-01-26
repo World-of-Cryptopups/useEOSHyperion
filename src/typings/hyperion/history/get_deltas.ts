@@ -20,19 +20,7 @@ export interface Delta {
 
 export type Code = string
 
-export interface Data {
-  collection?: Code
-  bytes?: string
-  claim_id?: string
-  blenderid?: string
-  blender?: Code
-  templateid?: number
-  assets?: string[]
-  scope?: Code
-  assetid?: string
-  from?: Code
-  total_uses?: number
-}
+export type Data = Record<string, any>
 
 export interface Total {
   value: number

@@ -50,11 +50,7 @@ export interface Authorization {
   permission: string
 }
 
-export interface Data {
-  user: string
-  to: string
-  assets: string[]
-}
+export type Data = Record<string, any>
 
 export interface Receipt {
   receiver: string

@@ -45,25 +45,7 @@ export type Receiver = string
 
 export type Permission = string
 
-export interface Data {
-  user?: string
-  to?: string
-  assets?: string[]
-  from?: Receiver
-  asset_ids?: string[]
-  memo?: string
-  account?: Receiver
-  vmtype?: number
-  vmversion?: number
-  code?: string
-  abi?: string
-  amount?: number
-  symbol?: string
-  quantity?: string
-  quant?: number
-  payer?: Receiver
-  receiver?: Receiver
-}
+export type Data = Record<string, any>
 
 export interface Total {
   value: number
